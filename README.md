@@ -2,6 +2,11 @@
 
 Reads in a valid JSON file and creates environment variables for every top level object found in the resulting object, **unless** an environment variable of that name already exists. It will not overwrite existing environment variables. It will only create environment variables for the top level objects.  
 
+## Installation 
+
+`npm i env-create --save`
+Although at this point you should have made `--save` your default
+
 ## Basic use
 
 Let's assume you have a `.env.json` at the root level of your project with the following contents
@@ -17,10 +22,10 @@ Let's assume you have a `.env.json` at the root level of your project with the f
 }
 ```
 
-Somewhere early in your code before you need the environment variables you add 
+Somewhere early in your code before you need the environment variables you add  
 
 ```javascript
-require('dotenv-json`).load() 
+require('env-create`).load() 
 const firstSecret = JSON.parse(process.env.secret1);
 const secondSecret = JSON.parse(process.env.secret2);
 ```
