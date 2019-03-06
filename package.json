@@ -5,7 +5,8 @@
   "main": "lib/main.js",
   "scripts": {
     "start": "node lib/main.js",
-    "test": "nyc mocha   --use_strict   \"lib/**/*.test.js\""
+    "test": "nyc mocha   --use_strict   \"lib/**/*.test.js\"",
+    "lint": "eslint lib --color"
   },
   "author": "Tod Gentille",
   "license": "GPL-3.0-or-later",
