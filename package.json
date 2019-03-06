@@ -1,6 +1,6 @@
 {
   "name": "env-create",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Read in a .env.json file that contains valid JSON and assign top level properties to environment variables",
   "repository": {
     "type": "git",
