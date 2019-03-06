@@ -34,7 +34,7 @@ The `load()` method will create a process environment variable for every top lev
 
 Example of full option object that can be passed in: 
 
-```JSON
+```javascript
 {path:"/Some/Path/To/Your/json_env_file.json",
 debug: true,
 encoding:"utf8"}
