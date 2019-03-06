@@ -4,7 +4,7 @@ Reads in a valid JSON file and creates environment variables for every top level
 
 ## Installation 
 
-`npm i env-create --save`
+`npm i env-create --save`  
 Although at this point you should have made `--save` your default
 
 ## Basic use
