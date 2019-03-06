@@ -25,7 +25,7 @@ Let's assume you have a `.env.json` at the root level of your project with the f
 Somewhere early in your code before you need the environment variables you add  
 
 ```javascript
-require('env-create`).load() 
+require('env-create').load() 
 const firstSecret = JSON.parse(process.env.secret1);
 const secondSecret = JSON.parse(process.env.secret2);
 ```
