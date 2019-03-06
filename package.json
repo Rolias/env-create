@@ -1,7 +1,11 @@
 {
   "name": "dotenv-json",
   "version": "1.0.0",
-  "description": "Read in a .env file that contains valid jason and assign top level properties to environment variables",
+  "description": "Read in a .env.json file that contains valid JSON and assign top level properties to environment variables",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rolias/dotenv-json"
+  },
   "main": "lib/main.js",
   "scripts": {
     "start": "node lib/main.js",
