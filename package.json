@@ -5,11 +5,15 @@
   "main": "lib/main.js",
   "scripts": {
     "start": "node lib/main.js",
-    "test": "mocha mocha  --use_strict   \\\"lib/**/*.test.js\\\""
+    "test": "nyc mocha   --use_strict   \"lib/**/*.test.js\""
   },
   "author": "Tod Gentille",
   "license": "GPL-3.0-or-later",
   "devDependencies": {
-    "eslint": "^5.15.1"
+    "chai": "^4.2.0",
+    "eslint": "^5.15.1",
+    "mocha": "^6.0.2",
+    "nyc": "^13.3.0",
+    "sinon": "^7.2.7"
   }
 }
