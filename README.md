@@ -1,6 +1,6 @@
-# dotenv-json
+# env-create
 
-Reads in a valid JSON file and creates environment variables for every top level object found in the resulting object. Inspired by [dotenv](https://github.com/motdotla/dotenv) which reads text files. Useful when you want to store JSON objects in an environment variable as strings. 
+Reads in a valid JSON file and creates environment variables for every top level object found in the resulting object, **unless** an environment variable of that name already exists. It will not overwrite existing environment variables. It will only create environment variables for the top level objects.  
 
 ## Basic use
 
@@ -12,7 +12,7 @@ Let's assume you have a `.env.json` at the root level of your project with the f
       "client_id": "123445",
   },
   "secret2": {
-    "access_token": "reallylongtooken",
+    "access_token": "reallylongtoken",
   },
 }
 ```
@@ -25,7 +25,7 @@ const firstSecret = JSON.parse(process.env.secret1);
 const secondSecret = JSON.parse(process.env.secret2);
 ```
 
-The `load()` method will create a process environment variable for every top level object in the the default `.env.json` file. The `load()` method optionally takes a JSON object with properties for `path, debug,` and `encoding`. All three properties are optional. The encoding for reading in the file defaults to `utf8`.
+The `load()` method will create a process environment variable for every top level object in the the default `.env.json` file located at the root of your project. The `load()` method optionally takes a JSON object with properties for `path, debug,` and `encoding`. All three properties are optional.  
 
 Example: 
 
