@@ -32,7 +32,7 @@ const secondSecret = JSON.parse(process.env.secret2);
 
 The `load()` method will create a process environment variable for every top level object in the the default `.env.json` file located at the root of your project. The `load()` method optionally takes a JSON object with properties for `path, debug,` and `encoding`. All three properties are optional.  
 
-Example: 
+Example of full option object that can be passed in: 
 
 ```JSON
 {path:"/Some/Path/To/Your/json_env_file.json",
