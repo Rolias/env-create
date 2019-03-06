@@ -1,0 +1,15 @@
+{
+  "name": "dotenv-json",
+  "version": "1.0.0",
+  "description": "Read in a .env file that contains valid jason and assign top level properties to environment variables",
+  "main": "lib/main.js",
+  "scripts": {
+    "start": "node lib/main.js",
+    "test": "mocha mocha  --use_strict   \\\"lib/**/*.test.js\\\""
+  },
+  "author": "Tod Gentille",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "eslint": "^5.15.1"
+  }
+}
