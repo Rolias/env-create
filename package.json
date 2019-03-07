@@ -9,7 +9,7 @@
   "main": "lib/main.js",
   "scripts": {
     "start": "node lib/main.js",
-    "test": "nyc mocha   --use_strict   \"lib/**/*.test.js\"",
+    "test": "nyc --reporter=text mocha   --use_strict   \"lib/**/*.test.js\" ",
     "lint": "eslint lib --color"
   },
   "author": "Tod Gentille",
@@ -20,5 +20,6 @@
     "mocha": "^6.0.2",
     "nyc": "^13.3.0",
     "sinon": "^7.2.7"
-  }
+  },
+  "dependencies": {}
 }

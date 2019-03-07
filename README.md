@@ -5,8 +5,8 @@ Reads in a valid JSON file and creates environment variables for every top level
 [![NPM version](https://img.shields.io/npm/v/dotenv.svg?style=flat-square)](~https://www.npmjs.com/package/env-create~) 
 [![BuildStatus](https://img.shields.io/travis/motdotla/dotenv/master.svg?style=flat-square)](~https://travis-ci.org/Rolias/env-create~)
 [![Coverage Status](https://coveralls.io/repos/github/Rolias/env-create/badge.svg?branch=master)](https://coveralls.io/github/Rolias/env-create?branch=master)
-## Installation 
 
+## Installation  
 
 `npm i env-create --save`  
 Although at this point you should have made `--save` your default
