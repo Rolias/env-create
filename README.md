@@ -46,6 +46,12 @@ const firstSecret = JSON.parse(process.env.secret1);
 const secondSecret = JSON.parse(process.env.secret2);
 ```
 
+You can also use an absolute path which is likely preferred if you store authentication data that is required among multiple projects
+
+```javascript
+require('env-create').load({path: "/User/yourUserName/ENV_VARS/gsweet.env.json", encode: "utf8", debug: "true"});) 
+```
+
 ## Acknowledgement
 
 Inspired by [dotenv](https://github.com/motdotla/dotenv)
