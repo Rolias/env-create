@@ -4,7 +4,7 @@ Reads in a valid JSON file and creates environment variables for every top level
 
 [![NPM version](https://img.shields.io/npm/v/env-create.svg?style=flat-square)](~https://www.npmjs.com/package/env-create~) 
 [![BuildStatus](https://img.shields.io/travis/rolias/env-create/master.svg?style=flat-square)](~https://travis-ci.org/Rolias/env-create~)
-![Coverage Status](https://img.shields.io/badge/coverage-100%-brightgreen.svg)
+![Coverage Status](https://img.shields.io/badge/coverage-100%25-brightgreen.svg)
 
 
 
