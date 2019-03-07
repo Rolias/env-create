@@ -4,7 +4,7 @@
   "description": "Read in a .env.json file that contains valid JSON and assign top level properties to environment variables",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Rolias/env-create"
+    "url": "https://github.com/Rolias/env-create.git"
   },
   "main": "lib/main.js",
   "scripts": {
