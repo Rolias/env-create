@@ -11,7 +11,7 @@ Reads in a valid JSON file and creates environment variables for every top level
 `npm i env-create --save`  
 Although at this point you should have made `--save` your default
 
-## Basic use
+## Basic usage
 
 Let's assume you have a `.env.json` at the root level of your project with the following contents
 
@@ -36,7 +36,7 @@ const secondSecret = JSON.parse(process.env.secret2);
 
 The `load()` method will create a process environment variable for every top level object in the the default `.env.json` file located at the root of your project. The `load()` method optionally takes a JSON object with properties for `path, debug,` and `encoding`. All three properties are optional.  
 
-# Option usage
+## Option usage
 
 Using a relative path to go up one folder out of your project and into an ENV_VARS folder to get the file named `gsweet.env.json`
 
@@ -45,9 +45,7 @@ require('env-create').load({path: "../ENV_VARS/gsweet.env.json", encode: "utf8",
 const firstSecret = JSON.parse(process.env.secret1);
 const secondSecret = JSON.parse(process.env.secret2);
 ```
-```
 
 ## Acknowledgement
 
 Inspired by [dotenv](https://github.com/motdotla/dotenv)
-
