@@ -10,7 +10,8 @@
   "scripts": {
     "start": "node lib/main.js",
     "test": "nyc --reporter=text mocha   --use_strict   \"lib/**/*.test.js\" ",
-    "lint": "eslint lib --color"
+    "lint": "eslint lib --color",
+    "build": "npm run lint && npm test && git add -A && git commit -m 'build commit ' &&  npm run version patch "
   },
   "author": "Tod Gentille",
   "license": "GPL-3.0-or-later",
