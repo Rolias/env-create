@@ -4,8 +4,11 @@ Reads in a valid JSON file and creates environment variables for every top level
 
 [![NPM version](https://img.shields.io/npm/v/env-create.svg?style=flat-square)](~https://www.npmjs.com/package/env-create~) 
 ![BuildStatus](https://img.shields.io/travis/Rolias/env-create.svg)
-![Coverage Status](https://img.shields.io/badge/coverage-100%25-brightgreen.svg)
+[![Maintainability](https://api.codeclimate.com/v1/badges/51a7c2ddffdc29ba06b5/maintainability)](https://codeclimate.com/github/Rolias/env-create/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/51a7c2ddffdc29ba06b5/test_coverage)](https://codeclimate.com/github/Rolias/env-create/test_coverage)
 [![Inline docs](https://inch-ci.org/github/Rolias/env-create.svg?branch=master)](https://github.com/Rolias/env-create)
+<!-- How to do it using img.shield.io [![Test Coverage](https://img.shields.io/codeclimate/coverage/Rolias/env-create.svg)](https://codeclimate.com/github/Rolias/env-create/test_coverage)
+-->
 
 ## Installation  
 
