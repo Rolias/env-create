@@ -5,6 +5,7 @@ Reads in a valid JSON file and creates environment variables for every top level
 [![NPM version](https://img.shields.io/npm/v/env-create.svg?style=flat-square)](~https://www.npmjs.com/package/env-create~) 
 ![BuildStatus](https://img.shields.io/travis/Rolias/env-create.svg)
 ![Coverage Status](https://img.shields.io/badge/coverage-100%25-brightgreen.svg)
+[![Inline docs](https://inch-ci.org/github/Rolias/env-create.svg?branch=master)](https://github.com/Rolias/env-create)
 
 ## Installation  
 
