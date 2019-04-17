@@ -38,14 +38,16 @@ const firstSecret = JSON.parse(process.env.secret1);
 const secondSecret = JSON.parse(process.env.secret2);
 ```
 
-The `load()` method will create a process environment variable for every top level object in the the default `.env.json` file located at the root of your project. The `load()` method optionally takes a JSON object with properties for `path, debug,` and `encoding`. All three properties are optional.  
+The `load()` method will create a process environment variable for every top level object in the the default `.env.json` file located at the root of your project. The `load()` method optionally takes a JSON object with properties for `path`, and `encoding`. Both properties are optional.  The function returns an array of messages. If an environment variable already existed and would have been overwritten there were will be a message letting you know that.
 
 ## Option usage
 
 Using a relative path to go up one folder out of your project and into an ENV_VARS folder to get the file named `gsweet.env.json`
 
 ```javascript
-require('env-create').load({path: "../ENV_VARS/gsweet.env.json", encode: "utf8", debug: "true"});) 
+require('env-create').load({
+    path: "../ENV_VARS/gsweet.env.json", 
+    encode: "utf8"))  
 const firstSecret = JSON.parse(process.env.secret1);
 const secondSecret = JSON.parse(process.env.secret2);
 ```
@@ -53,7 +55,9 @@ const secondSecret = JSON.parse(process.env.secret2);
 You can also use an absolute path which is likely preferred if you store authentication data that is required among multiple projects
 
 ```javascript
-require('env-create').load({path: "/User/yourUserName/ENV_VARS/gsweet.env.json", encode: "utf8", debug: "true"});) 
+const result = require('env-create').load({
+  path: "/User/yourUserName/ENV_VARS/gsweet.env.json",
+  encode: "utf8"))
 ```
 
 ## Acknowledgement
