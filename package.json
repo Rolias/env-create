@@ -9,7 +9,7 @@
   "main": "lib/main.js",
   "scripts": {
     "start": "node lib/main.js",
-    "test": "nyc --reporter=text mocha   --use_strict   \"lib/**/*.test.js\" ",
+    "test": "nyc --reporter=lcov mocha   --use_strict   \"lib/**/*.test.js\" ",
     "lint": "eslint lib --color",
     "build": "npm run lint && npm test && git add -A  &&  npm version patch && npm publish "
   },
