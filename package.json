@@ -11,7 +11,7 @@
     "start": "node lib/main.js",
     "test": "nyc --reporter=text mocha   --use_strict   \"lib/**/*.test.js\" ",
     "lint": "eslint lib --color",
-    "build": "npm run lint && npm test && git add -A  &&  npm version patch && npm publish "
+    "build": "npm test && git add -A  &&  npm version patch && npm publish "
   },
   "author": "Tod Gentille",
   "license": "GPL-3.0-or-later",
