@@ -14,7 +14,7 @@
     "build": "npm test && git add -A  &&  npm version patch && npm publish "
   },
   "author": "Tod Gentille",
-  "license": "GPL-3.0-or-later",
+  "license": "MIT",
   "keywords": [
     "dotenv",
     "env",
